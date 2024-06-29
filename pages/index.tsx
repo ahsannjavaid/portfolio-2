@@ -15,33 +15,43 @@ import {
   SiMysql,
   SiVercel,
 } from "react-icons/si";
-import Spline from "@splinetool/react-spline";
 import NonSSRWrapper from "../components/no-ssr-wrapper";
 import ReactTextTransition, { presets } from "react-text-transition";
 import { GoArrowRight } from "react-icons/go";
 import ProjectShowcase from "../components/ProjectShowcase";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
-const lol = ["Full-stack Developer", "Cloud-Tech Enthusiast", "AWS Trainee"];
+const lol = [
+  "Software Engineer",
+  "Full Stack Developer",
+  "Deep Logic Building Enthusiast",
+  "Cloud Engineering Trainee",
+  "Graphic Designer",
+];
 
 const Home: NextPage = () => {
   const splineContainer = useRef<HTMLDivElement>(null!);
+
   const [lolIndex, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((lolIndex) => lolIndex + 1);
     }, 3500);
+    setLoading(false);
     return () => {
       clearInterval(timer);
     };
   }, []);
+
   return (
     <div className="z-20 w-screen flex flex-col justify-start items-center">
       <NonSSRWrapper>
         <section className="w-full h-max lg:h-screen flex flex-col justify-center items-center z-40 bg-primary ">
-          <div className="min-h-max h-[90%] w-[95%] flex flex-col items-center lg:item-start lg:flex-row max-w-[1400px] gap-6 lg:gap-0">
+          <div className="min-h-max h-[90%] w-[95%] flex flex-col items-center lg:item-start lg:flex-row max-w-[1400px] gap-6">
             <div className="w-full lg:w-[30%] h-full flex flex-col justify-start mt-10 lg:mt-16 items-start">
               <div className="w-full h-full flex justify-center">
                 <div className="w-[91%] lg:w-full h-full flex flex-col sm:flex-row lg:flex-col gap-2 lg:gap-6">
@@ -51,7 +61,7 @@ const Home: NextPage = () => {
                       id="welcome-im-box"
                     >
                       <p className="py-1 px-4 font-bold">
-                        👋 Welcome , I&rsquo;m
+                        Assalam-u-Alaikum! I&rsquo;m
                       </p>
                     </div>
                   </div>
@@ -66,7 +76,7 @@ const Home: NextPage = () => {
                         <img
                           className="object-cover"
                           src="avatar.png"
-                          alt="Nathan's avatar"
+                          alt="Ahsan's avatar"
                         />
                       </div>
                     </div>
@@ -80,7 +90,7 @@ const Home: NextPage = () => {
                         id="welcome-im-box"
                         className="text-base w-max rounded-xl"
                       >
-                        <p className="font-bold">👋 Welcome , I&rsquo;m</p>
+                        <p className="font-bold">Asslam-u-Alaikum! I&rsquo;m</p>
                       </div>
                     </div>
                     <div id="name-container">
@@ -89,7 +99,7 @@ const Home: NextPage = () => {
                                 xl:text-[2.6rem] font-bold bg-gradient-to-r from-[#09C6F9] 
                                 to-[#5472FB] lg:py-2 "
                       >
-                        Nathan Luong
+                        Ahsan Javed
                       </h1>
                     </div>
                     <ReactTextTransition springConfig={presets.gentle} inline>
@@ -144,21 +154,14 @@ const Home: NextPage = () => {
                   </motion.div>
                 </AnimatePresence>
               )}
-              <Spline
-                scene="https://prod.spline.design/RwmvyKIRcAII4-yT/scene.splinecode"
-                onLoad={(spline) => {
-                  setLoading(false);
-                  if (
-                    splineContainer.current !== null &&
-                    window !== undefined
-                  ) {
-                    spline.setZoom(
-                      window.innerWidth > 1024
-                        ? splineContainer.current.offsetWidth / 1200
-                        : splineContainer.current.offsetWidth / 700
-                    );
-                  }
-                }}
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                alt="Unsplash"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
               />
             </div>
           </div>
@@ -170,7 +173,7 @@ const Home: NextPage = () => {
       >
         <div className="w-[70%] h-[20vh] flex justify-center items-center">
           <h1 className="text-4xl font-bold after:content-[''] after:block after:pt-2 after:border-b-[#3BB5DB] after:border-b-4">
-            Top Projects
+            My Projects
           </h1>
         </div>
         <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">

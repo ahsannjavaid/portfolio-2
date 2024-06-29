@@ -25,7 +25,7 @@ const Nav = ({ router }: props) => {
                     style={{ borderRadius: "10%" }}
                     alt="viz-logo"
                   />
-                  Nathan Luong
+                  Ahsan Javed
                 </a>
               </Link>
               <button

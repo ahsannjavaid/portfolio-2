@@ -14,7 +14,6 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // matching all API routes
         source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
@@ -34,7 +33,10 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ["porfolio-blogs.s3.us-east-2.amazonaws.com"],
+    domains: [
+      "porfolio-blogs.s3.us-east-2.amazonaws.com",
+      "images.unsplash.com",
+    ],
     remotePatterns: [
       {
         protocol: "https",
@@ -47,9 +49,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: { esmExternals: true },
 };
 
-module.exports = nextConfig;
-module.exports = removeImports({
-  experimental: { esmExternals: true },
-});
+module.exports = removeImports(nextConfig);
