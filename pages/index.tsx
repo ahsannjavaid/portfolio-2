@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                       <div id="Image Container" className="absolute">
                         <img
                           className="object-cover"
-                          src="avatar.png"
+                          src="images/MyProfilePicture-removebg-preview.png"
                           alt="Ahsan's avatar"
                         />
                       </div>

@@ -13,19 +13,19 @@ const Nav = ({ router }: props) => {
   return (
     <>
       {!router.pathname.startsWith("/admin") && (
-        <nav className="relative flex flex-wrap items-center justify-between px-4 py-7 z-50 bg-[#202020]">
+        <nav className="relative flex flex-wrap items-center justify-between p-4 z-50 bg-[#202020]">
           <div className="container pl-4 pr-8 mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <Link href="/">
-                <a className="text-lg font-bold leading-relaxed flex justify-center gap-2 items-center mr-4 py-2 whitespace-nowrap uppercase text-white">
+                <a className="text-lg font-bold leading-relaxed flex justify-center gap-3 items-center mr-4 whitespace-nowrap uppercase text-white">
                   <Image
-                    src={"/viz-logo-no-grad.png"}
-                    width={25}
-                    height={25}
-                    style={{ borderRadius: "10%" }}
-                    alt="viz-logo"
+                    src={"/icon-square.png"}
+                    width={40}
+                    height={40}
+                    alt="ahsan-javed-logo"
+                    className="rounded-xl"
                   />
-                  Ahsan Javed
+                  <span>Ahsan Javed</span>
                 </a>
               </Link>
               <button
@@ -55,18 +55,7 @@ const Nav = ({ router }: props) => {
                 <li className="nav-item">
                   <Link href="/linktree">
                     <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
-                      <span className="ml-2">LinkTree</span>
-                    </a>
-                  </Link>
-                </li>
-                <div className="hidden select-none lg:flex lg:justify-center lg:items-center text-[#aaaaaa]">
-                  |
-                </div>
-
-                <li className="nav-item">
-                  <Link href="/blogs">
-                    <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
-                      <span className="ml-2">Blog</span>
+                      <span className="ml-2">Link Tree</span>
                     </a>
                   </Link>
                 </li>
