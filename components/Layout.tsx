@@ -44,6 +44,7 @@ const Layout = ({ router, children }: any) => {
       <Head>
         <meta name="description" content="Welcome to my portfolio!" />
         <link rel="icon" href="/favicon.ico" />
+        <title>Ahsan Javed</title>
       </Head>
       <div
         id="main-layout-container"
