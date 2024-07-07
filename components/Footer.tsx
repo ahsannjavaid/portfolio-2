@@ -49,14 +49,14 @@ const Footer = ({ currentPath }: prop) => {
       // refactor this className block
       className={
         currentPath === "/blogs"
-          ? "z-50 relative h-[400px] sm:h-[350px] w-full bg-blogBg"
-          : "z-50 relative h-[400px] sm:h-[350px] w-full bg-primary"
+          ? "z-50 relative h-[300px] sm:h-[150px] w-full bg-blogBg"
+          : "z-50 relative h-[300px] sm:h-[150px] w-full bg-primary"
       }
       style={{
         display: currentPath === "/admin/editor" ? "none" : "block",
       }}
     >
-      <div className="z-40 absolute w-full h-[80%] sm:h-[75%] flex justify-center items-end">
+      {/* <div className="z-40 absolute w-full h-[80%] sm:h-[75%] flex justify-center items-end">
         <div className="flex flex-col gap-3 w-[80%] sm:w-[70%] md:w-[45%]">
           {userFound ? (
             <div className="text-center text-sm sm:text-base py-3 text-[#ffffff] bg-[#000000] font-bold flex justify-center item-center bg-opacity-30 w-full px-4">
@@ -115,6 +115,17 @@ const Footer = ({ currentPath }: prop) => {
             </div>
           )}
         </div>
+      </div> */}
+      <div className="z-40 absolute w-full h-[80%] sm:h-[75%] flex justify-center items-end">
+        Please have a look on my
+        <a
+          className="px-1 underline hover:italic"
+          href="https://behance.net/ahsannjavaid"
+          target="_blank"
+        >
+          Graphic Design Portfolio
+        </a>{" "}
+        as well.
       </div>
       <div
         id="svg-container"

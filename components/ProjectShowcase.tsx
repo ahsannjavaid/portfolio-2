@@ -16,11 +16,12 @@ type props = {
   slogan: string;
   paragraph: string;
   githubLink: string | undefined;
-  demoLink: string | undefined;
+  demoLink: Array<string> | undefined;
   images: Array<string>;
   links: Array<displayIcons>;
   imagePath: string;
   side: "left" | "right";
+  demoText?: Array<string>;
 };
 
 const ProjectShowcase = ({
@@ -34,6 +35,7 @@ const ProjectShowcase = ({
   imagePath,
   side,
   color,
+  demoText = ["Live App"],
 }: props) => {
   const lighterHexColor = toLighterHex(color);
   return (
@@ -66,7 +68,7 @@ const ProjectShowcase = ({
             >
               {name === "McMaster Rocketry" ? (
                 <a
-                  href={demoLink}
+                  href={demoLink || demoLink?.length ? demoLink[0] : ""}
                   target="_blank"
                   rel="noreferrer"
                   className="flex justify-center items-center"
@@ -83,7 +85,7 @@ const ProjectShowcase = ({
               ) : (
                 <div className="w-16 h-16 xl:w-20 xl:h-20 rounded-lg flex justify-center items-center">
                   <a
-                    href={demoLink}
+                    href={demoLink || demoLink?.length ? demoLink[0] : ""}
                     target="_blank"
                     rel="noreferrer"
                     style={{
@@ -134,29 +136,30 @@ const ProjectShowcase = ({
                   }}
                   className="w-[70%] min-w-[6rem] xl:w-28 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base border-[3px] bg-[#2a2a2a] flex justify-center items-center"
                 >
-                  Github
+                  GitHub
                 </motion.a>
               ) : (
                 void 0
               )}
-              {demoLink === undefined ? (
-                void 0
-              ) : (
-                <motion.a
-                  whileHover={{
-                    backgroundColor: lighterHexColor,
-                  }}
-                  href={demoLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{
-                    backgroundColor: color,
-                  }}
-                  className={`w-[70%] min-w-[6rem] xl:w-28 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base flex justify-center items-center shadow-md`}
-                >
-                  Demo
-                </motion.a>
-              )}
+              {demoLink === undefined
+                ? void 0
+                : demoLink?.map((link, index) => (
+                    <motion.a
+                      key={index}
+                      whileHover={{
+                        backgroundColor: lighterHexColor,
+                      }}
+                      href={link}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        backgroundColor: color,
+                      }}
+                      className={`w-[70%] min-w-[6rem] xl:w-28 py-1.5 xl:py-2 rounded-xl text-sm xl:text-base flex justify-center items-center shadow-md`}
+                    >
+                      {demoText[index]}
+                    </motion.a>
+                  ))}
             </div>
           </div>
         </div>

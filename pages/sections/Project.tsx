@@ -1,20 +1,49 @@
 import React from "react";
 import {
   SiReact,
-  SiRedux,
-  SiPostgresql,
-  SiNextdotjs,
-  SiGraphql,
-  SiFirebase,
+  SiNodedotjs,
+  SiMongodb,
   SiExpress,
-  SiSqlite,
-  SiTailwindcss,
-  SiMysql,
-  SiVercel,
+  SiBootstrap,
+  SiCplusplus,
+  SiAssemblyscript,
+  SiCsharp,
+  SiUnity,
 } from "react-icons/si";
 import ProjectShowcase from "../../components/ProjectShowcase";
+import { FaJava } from "react-icons/fa";
+import { TbBrandNetbeans } from "react-icons/tb";
+import { GrDos } from "react-icons/gr";
 
 function Project() {
+  const mernStackIconsArray = [
+    {
+      link: "https://www.mongodb.com",
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      link: "https://expressjs.com",
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      link: "https://reactjs.org/",
+      icon: <SiReact />,
+      name: "React.js",
+    },
+    {
+      link: "https://nodejs.org/en",
+      icon: <SiNodedotjs />,
+      name: "Node.js",
+    },
+    {
+      link: "https://getbootstrap.com",
+      icon: <SiBootstrap />,
+      name: "Bootstrap",
+    },
+  ];
+
   return (
     <section
       id="portfolio"
@@ -27,150 +56,227 @@ function Project() {
       </div>
       <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
-          color="#52409f"
+          color="#4D3189"
           side="right"
-          name="Viz"
-          slogan="Diagramming Made Easy"
-          paragraph="A web-based editor to help backend engineers create, edit,
-                visualize and maitain their cloud infastructure diagrams."
-          githubLink="https://github.com/nathan20021/VIZ-PROD"
-          demoLink="https://viz.nathanluong.me"
-          imagePath="/viz-logo.png"
+          name="UN Portal"
+          slogan="(Web Application)"
+          paragraph="A web-based application to help instructors evaluate the performance of students and help students to track their academic performance."
+          githubLink="https://github.com/ahsannjavaid/un-portal"
+          demoLink={["https://un-portalbyahsanjaved.netlify.app/#/"]}
+          imagePath="/projects/unportal/square_icon_0.0.png"
           images={[
-            "viz-screenshot.png",
-            "IOT-Solution-Diagram.jpeg",
-            "ML-in-Swimming.jpeg",
+            "/projects/unportal/un-1.png",
+            "/projects/unportal/un-2.png",
+            "/projects/unportal/un-3.png",
+            "/projects/unportal/un-4.png",
+            "/projects/unportal/un-5.png",
+            "/projects/unportal/un-6.png",
+            "/projects/unportal/un-7.png",
+            "/projects/unportal/un-8.png",
+            "/projects/unportal/un-9.png",
+            "/projects/unportal/un-10.png",
+            "/projects/unportal/un-11.png",
+            "/projects/unportal/un-12.png",
+            "/projects/unportal/un-13.png",
+            "/projects/unportal/un-14.png",
           ]}
-          links={[
-            {
-              link: "https://reactjs.org/",
-              icon: <SiReact />,
-              name: "React",
-            },
-            {
-              link: "https://redux.js.org/",
-              icon: <SiRedux />,
-              name: "Redux",
-            },
-            {
-              link: "https://www.postgresql.org/",
-              icon: <SiPostgresql />,
-              name: "PostgreSQL",
-            },
-          ]}
+          links={mernStackIconsArray}
         />
       </div>
       <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
-          color="#01529a"
+          color="#e41221"
           side="left"
-          name="Personal Blogs"
-          slogan="A place to share my thoughts"
-          paragraph="A place where I can share my thoughts and technical experiences with the world. Aiming to improve my writting, and thought-orginization skills."
-          githubLink="https://github.com/nathan20021/summer-portfolio"
-          demoLink="https://nathanluong.me/blogs"
-          imagePath="/viz-logo-no-grad.png"
+          name="Build You"
+          slogan="(Web Application)"
+          paragraph="A web-based application through which we can create our basic portfolio and showcase our projects."
+          githubLink="https://github.com/ahsannjavaid/buildyou"
+          demoLink={["https://buildyoubyahsanjaved.netlify.app/#/"]}
+          imagePath="/projects/buildyou/square_icon.png"
           images={[
-            "blog-1.png",
-            "blog-3.png",
-            "blog-2.png",
-            "blog-5.png",
-            "blog-4.png",
+            "/projects/buildyou/by-1.png",
+            "/projects/buildyou/by-2.png",
+            "/projects/buildyou/by-3.png",
+            "/projects/buildyou/by-4.png",
+            "/projects/buildyou/by-5.png",
+            "/projects/buildyou/by-6.png",
+            "/projects/buildyou/by-7.png",
+            "/projects/buildyou/by-7.png",
+            "/projects/buildyou/by-8.png",
+            "/projects/buildyou/by-9.png",
+            "/projects/buildyou/by-10.png",
+            "/projects/buildyou/by-11.png",
           ]}
-          links={[
-            {
-              link: "https://vercel.com/",
-              icon: <SiVercel />,
-              name: "Vercel",
-            },
-            {
-              link: "https://reactjs.org/",
-              icon: <SiReact />,
-              name: "React",
-            },
-            {
-              link: "https://nextjs.org/",
-              icon: <SiNextdotjs />,
-              name: "Next.js",
-            },
-            {
-              link: "https://www.mysql.com/",
-              icon: <SiMysql />,
-              name: "MySQL",
-            },
-          ]}
+          links={mernStackIconsArray}
         />
       </div>
       <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
-          color="#7a003c"
+          color="#8a2be2"
           side="right"
-          name="McMaster Rocketry"
-          slogan="Fueling Innovation."
-          paragraph="A platform for the McMaster Rocketry Team to showcase their advancements, recruiting members, publishing blogs, and seeking external sponsorships."
-          githubLink={undefined}
-          demoLink="https://www.macrocketry.ca/"
-          imagePath="/rocketry_logo.webp"
+          name="Weather Forecast"
+          slogan="(Web Application - No DB)"
+          paragraph="A web-page which is capable of responding about weather conditions of several geographical locations through city or latitude and longitude values using a third-party API."
+          githubLink="https://github.com/ahsannjavaid/weather-forecast"
+          demoLink={["https://weatherforcastbyahsanjaved.netlify.app/#/"]}
+          imagePath="https://www.freepnglogos.com/uploads/sun-png/patio-shades-sun-screens-phoenix-east-valley-arizona-7.png"
           images={[
-            "rocketry-landing.png",
-            "void-lake-5.png",
-            "flight-profile.png",
+            "/projects/weather_forecast/wf-1.png",
+            "/projects/weather_forecast/wf-2.png",
+            "/projects/weather_forecast/wf-3.png",
+            "/projects/weather_forecast/wf-4.png",
           ]}
           links={[
             {
               link: "https://reactjs.org/",
               icon: <SiReact />,
-              name: "React",
-            },
-            {
-              link: "https://nextjs.org/",
-              icon: <SiNextdotjs />,
-              name: "Next.js",
-            },
-            {
-              link: "https://graphql.org/",
-              icon: <SiGraphql />,
-              name: "GraphQL",
-            },
-            {
-              link: "https://firebase.google.com/",
-              icon: <SiFirebase />,
-              name: "Firebase",
+              name: "React.js",
             },
           ]}
         />
       </div>
       <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative">
         <ProjectShowcase
-          color="#666666"
+          color="#6c757d"
           side="left"
-          name="Oober 🎉"
-          slogan="Connecting Riders and Drivers."
-          paragraph="A mobile application that connects riders and drivers in a safe and efficient manner."
-          githubLink={"https://github.com/nathan20021/3A04-Project"}
+          name="Books"
+          slogan="(Web Application)"
+          paragraph="A web-based application which manages books as an inventory. It is a simple project to practice concepts of MVC architecture."
+          githubLink={"https://github.com/ahsannjavaid/books"}
+          demoLink={["https://booksbyahsanjaved.netlify.app/#/"]}
+          imagePath="https://vdot.maps.arcgis.com/sharing/rest/content/items/c59ef69651d947a89f96a5c7f94b449f/data"
+          images={[
+            "/projects/books/b-1.png",
+            "/projects/books/b-2.png",
+            "/projects/books/b-3.png",
+          ]}
+          links={mernStackIconsArray}
+        />
+      </div>
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh] md:h-[90vh] flex justify-center items-center relative mb-28 mt-10">
+        <ProjectShowcase
+          color="#D6D9DF"
+          side="right"
+          name="Invoice System"
+          slogan="(Desktop Application)"
+          paragraph="A desktop-based application which creates invoice of items purchased. It supports CRUD functionality."
+          githubLink={"https://github.com/ahsannjavaid/invoice-system"}
           demoLink={undefined}
-          imagePath="/Oober.png"
-          images={["Oober_Auth.png", "Oober_carpool.png", "Oober_end.png"]}
+          imagePath="https://education.oracle.com/file/general/p-80-java.png"
+          images={[
+            "/projects/invoice_system/is-1.png",
+            "/projects/invoice_system/is-2.png",
+            "/projects/invoice_system/is-3.png",
+            "/projects/invoice_system/is-4.png",
+            "/projects/invoice_system/is-5.png",
+            "/projects/invoice_system/is-6.png",
+            "/projects/invoice_system/is-7.png",
+            "/projects/invoice_system/is-8.png",
+            "/projects/invoice_system/is-9.png",
+          ]}
           links={[
             {
               link: "https://reactjs.org/",
-              icon: <SiReact />,
-              name: "React Native",
+              icon: <FaJava />,
+              name: "Java",
             },
             {
-              link: "https://tailwindcss.com/",
-              icon: <SiTailwindcss />,
-              name: "Tailwind CSS",
+              link: "https://reactjs.org/",
+              icon: <TbBrandNetbeans />,
+              name: "Net Beans",
+            },
+          ]}
+        />
+      </div>
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative mt-28 mb-10">
+        <ProjectShowcase
+          color="#153292"
+          side="left"
+          name="Space Shooter"
+          slogan="(Game)"
+          paragraph="A console-based game that contains two entities; spaceship of user and spaceship of enemies. This game has two modes; Classic (C) and Arcade (A)."
+          githubLink={"https://github.com/ahsannjavaid/space-shooter"}
+          demoLink={[
+            "https://drive.google.com/file/d/1hKbCSzDzzLsgkIlqVjr1mSMBZIgGwZSl/view",
+            "https://drive.google.com/file/d/1eFQgb8W6fB9r6foEHsexnzuMsiV7f2bT/view",
+          ]}
+          demoText={["Gameplay-C", "Gameplay-A"]}
+          imagePath="/projects/space_shooter/1.1 Icon png.ico"
+          images={[
+            "/projects/space_shooter/ss-1.png",
+            "/projects/space_shooter/ss-2.png",
+            "/projects/space_shooter/ss-3.png",
+            "/projects/space_shooter/ss-4.png",
+            "/projects/space_shooter/ss-5.png",
+            "/projects/space_shooter/ss-6.png",
+            "/projects/space_shooter/ss-7.png",
+            "/projects/space_shooter/ss-8.png",
+          ]}
+          links={[
+            {
+              link: "https://cplusplus.com",
+              icon: <SiCplusplus />,
+              name: "C++",
+            },
+          ]}
+        />
+      </div>
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative mt-24 mb-10">
+        <ProjectShowcase
+          color="#FF70FF"
+          side="right"
+          name="Catch the Jewels"
+          slogan="(Game)"
+          paragraph="A console-based game that contains two entities; bucket and a jewels as rewards. The rewards worth 5, 10, and 15 points. The goal is to prevent bomb and collect as many rewards as possible in 2 minutes."
+          githubLink={"https://github.com/ahsannjavaid/books"}
+          demoLink={["https://screenrec.com/share/SP2whsknEF"]}
+          demoText={["Gameplay"]}
+          imagePath="/projects/catch_the_jewels/logo.png"
+          images={[
+            "/projects/catch_the_jewels/cj-1.png",
+            "/projects/catch_the_jewels/cj-2.png",
+            "/projects/catch_the_jewels/cj-3.png",
+          ]}
+          links={[
+            {
+              link: "https://en.wikipedia.org/wiki/Assembly_language",
+              icon: <SiAssemblyscript />,
+              name: "Assembly Language",
             },
             {
-              link: "https://sqlite.org/",
-              icon: <SiSqlite />,
-              name: "SQLite",
+              link: "https://www.dosbox.com",
+              icon: <GrDos />,
+              name: "DOSBox",
+            },
+          ]}
+        />
+      </div>
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative">
+        <ProjectShowcase
+          color="#020B1C"
+          side="left"
+          name="Flappy Bird"
+          slogan="(Game)"
+          paragraph="A GUI-based game in which the actor is a bird to which we have to flap in order to save it from collision and falling. The goal is to cross as many pipes as possible. The game speed increases as the game proceeds."
+          githubLink={"https://github.com/ahsannjavaid/flappy-bird"}
+          demoLink={["https://screenrec.com/share/vk5LToj0wR"]}
+          demoText={["Gameplay"]}
+          imagePath="/projects/flappy_bird/logo.png"
+          images={[
+            "/projects/flappy_bird/fb-1.png",
+            "/projects/flappy_bird/fb-2.png",
+            "/projects/flappy_bird/fb-3.png",
+          ]}
+          links={[
+            {
+              link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#:~:text=C%23%20(%2Fˌsiː%20ˈ,C%23",
+              icon: <SiCsharp />,
+              name: "C#",
             },
             {
-              link: "https://expressjs.com/",
-              icon: <SiExpress />,
-              name: "Express.js",
+              link: "https://unity.com",
+              icon: <SiUnity />,
+              name: "Unity",
             },
           ]}
         />

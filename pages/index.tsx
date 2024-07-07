@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <div className="z-20 w-screen flex flex-col justify-start items-center">
       <Hero />
       <Projects />
-      <HonorableMentions />
+      {/* <HonorableMentions /> */}
     </div>
   );
 };

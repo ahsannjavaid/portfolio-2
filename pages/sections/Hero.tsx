@@ -40,9 +40,7 @@ function Hero() {
                     className="bg-[#01529a] text-base w-max rounded-2xl"
                     id="welcome-im-box"
                   >
-                    <p className="py-1 px-4 font-bold">
-                      Assalam-u-Alaikum! I&rsquo;m
-                    </p>
+                    <p className="py-1 px-4">Assalam-u-Alaikum! I&rsquo;m</p>
                   </div>
                 </div>
                 <div
@@ -67,13 +65,13 @@ function Hero() {
                       id="welcome-im-box"
                       className="text-base w-max rounded-xl"
                     >
-                      <p className="font-bold">Asslam-u-Alaikum! I&rsquo;m</p>
+                      <p>Asslam-u-Alaikum! I&rsquo;m</p>
                     </div>
                   </div>
                   <div id="name-container">
                     <h1
                       className="bg-clip-text text-transparent text-[2.3rem] lg:text-[2.5rem] 
-                                xl:text-[2.6rem] font-bold bg-gradient-to-r from-[#09C6F9] 
+                                xl:text-[2.6rem] bg-gradient-to-r from-[#09C6F9] 
                                 to-[#5472FB] lg:py-2 "
                     >
                       Ahsan Javed

@@ -14,7 +14,7 @@ const Nav = ({ router }: props) => {
     <>
       {!router.pathname.startsWith("/admin") && (
         <nav className="relative flex flex-wrap items-center justify-between p-4 z-50 bg-[#202020]">
-          <div className="container pl-4 pr-8 mx-auto flex flex-wrap items-center justify-between">
+          <div className="container mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <Link href="/">
                 <a className="text-lg font-bold leading-relaxed flex justify-center gap-3 items-center mr-4 whitespace-nowrap uppercase text-white">
