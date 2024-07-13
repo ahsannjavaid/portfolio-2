@@ -15,6 +15,18 @@ import { FaJava } from "react-icons/fa";
 import { TbBrandNetbeans } from "react-icons/tb";
 import { GrDos } from "react-icons/gr";
 
+/**
+ * Project component displays a portfolio section showcasing various projects.
+ * Each project is displayed using the ProjectShowcase component, featuring a name,
+ * description, links to GitHub repository and demo, and a list of technologies used.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Project />
+ * )
+ * @return {JSX.Element} The Project component
+ */
 function Project() {
   const mernStackIconsArray = [
     {

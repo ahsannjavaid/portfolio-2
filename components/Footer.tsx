@@ -1,49 +1,49 @@
 import * as React from "react";
-import { useState, useRef } from "react";
-import axios from "axios";
+// import { useState, useRef } from "react";
+// import axios from "axios";
 
-import { BsArrowClockwise } from "react-icons/bs";
+// import { BsArrowClockwise } from "react-icons/bs";
 
 type prop = {
   currentPath: string;
 };
 
 const Footer = ({ currentPath }: prop) => {
-  const form = useRef(null);
-  const [formValue, setValue] = useState<string>("");
-  const [waiting, setIsWaiting] = useState<boolean>(false);
-  const [userFound, setUserFound] = useState<boolean>(false);
-  const [placeHolder, setPlaceHolder] = useState<string>("example@gmail.com");
-  const [canValidate, setCanValidate] = useState<boolean>(true);
-  const [message, setMessage] = useState<string>(
-    "Thanks for the sub! Have a lovely day 😄"
-  );
-  const isValidEmail = (email: string) => {
-    return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
-  };
+  // const form = useRef(null);
+  // const [formValue, setValue] = useState<string>("");
+  // const [waiting, setIsWaiting] = useState<boolean>(false);
+  // const [userFound, setUserFound] = useState<boolean>(false);
+  // const [placeHolder, setPlaceHolder] = useState<string>("example@gmail.com");
+  // const [canValidate, setCanValidate] = useState<boolean>(true);
+  // const [message, setMessage] = useState<string>(
+  //   "Thanks for the sub! Have a lovely day 😄"
+  // );
+  // const isValidEmail = (email: string) => {
+  //   return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+  // };
 
-  const handleClick = async (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    setIsWaiting(true);
-    if (isValidEmail(formValue)) {
-      const { data } = await axios.put(`/api/user/${formValue}`, {
-        headers: {
-          Accept: "application/json",
-        },
-      });
-      if (data.message.toLowerCase() === "user found") {
-        setMessage("You are on the subscribers list! 😄");
-        setUserFound(true);
-      }
-      if (data.message.toLowerCase() === "user added") {
-        setMessage("Thanks for the sub! Have a lovely day 😄");
-        setUserFound(true);
-      }
-    } else {
-      setCanValidate(false);
-    }
-    setIsWaiting(false);
-  };
+  // const handleClick = async (e: React.SyntheticEvent) => {
+  //   e.preventDefault();
+  //   setIsWaiting(true);
+  //   if (isValidEmail(formValue)) {
+  //     const { data } = await axios.put(`/api/user/${formValue}`, {
+  //       headers: {
+  //         Accept: "application/json",
+  //       },
+  //     });
+  //     if (data.message.toLowerCase() === "user found") {
+  //       setMessage("You are on the subscribers list! 😄");
+  //       setUserFound(true);
+  //     }
+  //     if (data.message.toLowerCase() === "user added") {
+  //       setMessage("Thanks for the sub! Have a lovely day 😄");
+  //       setUserFound(true);
+  //     }
+  //   } else {
+  //     setCanValidate(false);
+  //   }
+  //   setIsWaiting(false);
+  // };
   return (
     <footer
       // refactor this className block
@@ -122,6 +122,7 @@ const Footer = ({ currentPath }: prop) => {
           className="px-1 underline hover:italic"
           href="https://behance.net/ahsannjavaid"
           target="_blank"
+          rel="noreferrer"
         >
           Graphic Design Portfolio
         </a>{" "}

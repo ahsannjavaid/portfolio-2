@@ -5,8 +5,19 @@ import { GoArrowRight } from "react-icons/go";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+/**
+ * Hero component displays the hero section of the webpage.
+ * It includes a rotating text effect, an image, and a call-to-action button.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Hero />
+ * )
+ * @return {JSX.Element} The Hero component
+ */
 function Hero() {
-  const lol = [
+  const roles = [
     "Software Engineer",
     "Full Stack Developer",
     "Deep Logic Building Enthusiast",
@@ -15,12 +26,12 @@ function Hero() {
   ];
   const splineContainer = useRef<HTMLDivElement>(null!);
 
-  const [lolIndex, setIndex] = useState(0);
+  const [roleIndex, setRoleIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((lolIndex) => lolIndex + 1);
+      setRoleIndex((roleIndex) => roleIndex + 1);
     }, 3500);
     setLoading(false);
     return () => {
@@ -79,7 +90,7 @@ function Hero() {
                   </div>
                   <ReactTextTransition springConfig={presets.gentle} inline>
                     <h1 className="text-xl lg:text-2xl">
-                      {lol[lolIndex % lol.length]}
+                      {roles[roleIndex % roles.length]}
                     </h1>
                   </ReactTextTransition>
                   <div

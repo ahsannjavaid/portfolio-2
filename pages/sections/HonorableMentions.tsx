@@ -2,6 +2,18 @@ import ParticleBg from "@/components/particleBg";
 import ProjectCard from "@/components/ProjectCard";
 import React from "react";
 
+/**
+ * HonorableMentions component displays a section with highlighted projects.
+ * Each project is represented by a ProjectCard component, featuring an image,
+ * title, description, and links to the project's GitHub repository and demo.
+ *
+ * @component
+ * @example
+ * return (
+ *   <HonorableMentions />
+ * )
+ * @return {JSX.Element} The HonorableMentions component
+ */
 function HonorableMentions() {
   return (
     <section

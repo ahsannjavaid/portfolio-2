@@ -1,7 +1,7 @@
 import React from "react";
 import type { NextPage } from "next";
 import Projects from "./sections/Project";
-import HonorableMentions from "./sections/HonorableMentions";
+// import HonorableMentions from "./sections/HonorableMentions";
 import Hero from "./sections/Hero";
 
 const Home: NextPage = () => {
