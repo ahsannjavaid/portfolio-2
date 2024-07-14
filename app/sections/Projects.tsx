@@ -135,7 +135,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
           color="#6c757d"
           side="left"
@@ -153,7 +153,7 @@ function Projects() {
           links={mernStackIconsArray}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh] md:h-[90vh] flex justify-center items-center relative mb-28 mt-10">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative my-16">
         <ProjectShowcase
           color="#D6D9DF"
           side="right"
@@ -188,7 +188,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative mt-28 mb-10">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative mb-24 mt-28">
         <ProjectShowcase
           color="#153292"
           side="left"
@@ -221,7 +221,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative mt-24 mb-10">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative my-24">
         <ProjectShowcase
           color="#FF70FF"
           side="right"
@@ -251,7 +251,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] h-[65vh]  md:h-[90vh] flex justify-center items-center relative">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative mt-16">
         <ProjectShowcase
           color="#020B1C"
           side="left"
