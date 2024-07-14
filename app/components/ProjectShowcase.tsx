@@ -105,7 +105,7 @@ const ProjectShowcase = ({
             </div>
             <div
               id='button-container'
-              className='w-full flex justify-around gap-3'
+              className='w-full flex flex-col xl:flex-row justify-around gap-3 items-center'
             >
               {githubLink !== undefined ? (
                 <motion.a

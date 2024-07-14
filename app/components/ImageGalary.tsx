@@ -78,8 +78,8 @@ const ImageGalary = ({ images }: props) => {
             <img
               src={images[imageIndex]}
               draggable={false}
-              alt=""
-              className="w-full aspect-[16/10] md:aspect-auto opacity-80 group-hover:opacity-100 hover:opacity-100 duration-150 ease-in-out"
+              alt="project"
+              className="w-full aspect-auto opacity-80 group-hover:opacity-100 hover:opacity-100 duration-150 ease-in-out"
             />
           </div>
         </motion.div>
