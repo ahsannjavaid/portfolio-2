@@ -4,7 +4,7 @@ import GradientButton from '../components/GradientButton';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TbMailFilled } from 'react-icons/tb';
 import { BsWhatsapp } from 'react-icons/bs';
-import ParticleBg from '../components/particleBg';
+import ParticleBg from '../components/ParticleBg';
 
 function Hero() {
   const roles = [
