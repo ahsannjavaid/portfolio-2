@@ -3,12 +3,13 @@ import * as React from 'react';
 const Footer = () => {
   return (
     <footer
-      className={'z-50 relative h-[300px] sm:h-[150px] w-full bg-primary'}
+      className={'z-50 relative h-[300px] sm:h-[150px] w-full bg-primary mt-20'}
       style={{
         display: 'block',
       }}
     >
-      <div className='z-40 absolute w-full h-[80%] sm:h-[75%] flex justify-center items-end'>
+      <div className='z-40 absolute w-full h-full flex justify-center items-center'>
+        <div className='pt-8 px-6 text-center'>
         Please have a look on my
         <a
           className='px-1 underline hover:italic'
@@ -17,8 +18,9 @@ const Footer = () => {
           rel='noreferrer'
         >
           Graphic Design Portfolio
-        </a>{' '}
+        </a>
         as well.
+      </div>
       </div>
       <div
         id='svg-container'
