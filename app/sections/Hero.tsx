@@ -4,7 +4,6 @@ import GradientButton from '../components/GradientButton';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TbMailFilled } from 'react-icons/tb';
 import { BsWhatsapp } from 'react-icons/bs';
-import ParticleBg from '../components/ParticleBg';
 
 function Hero() {
   const roles = [
@@ -28,8 +27,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className='flex justify-center items-center flex-col gap-10 pb-10 z-0'>
-      <ParticleBg />
+    <section className='flex justify-center items-center flex-col gap-10 py-10 z-0'>
       <div className='inline-block'>
         <div
           className='bg-[#01529a] text-base w-max rounded-2xl'
