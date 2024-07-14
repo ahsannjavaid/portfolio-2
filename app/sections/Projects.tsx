@@ -118,13 +118,13 @@ function Projects() {
           slogan="(Web Application - No DB)"
           paragraph="A web-page which is capable of responding about weather conditions of several geographical locations through city or latitude and longitude values using a third-party API."
           githubLink="https://github.com/ahsannjavaid/weather-forecast"
-          demoLink={["https://weatherforcastbyahsanjaved.netlify.app/#/"]}
+          demoLink={["https://weatherforecastbyahsanjaved.netlify.app/#/"]}
           imagePath="https://www.freepnglogos.com/uploads/sun-png/patio-shades-sun-screens-phoenix-east-valley-arizona-7.png"
           images={[
             "/projects/weather_forecast/wf-1.png",
-            "/projects/weather_forecast/wf-2.png",
-            "/projects/weather_forecast/wf-3.png",
-            "/projects/weather_forecast/wf-4.png",
+            "/projects/weather_forecast/wf-2-2.0.png",
+            "/projects/weather_forecast/wf-3-2.0.png",
+            "/projects/weather_forecast/wf-4-2.0.png",
           ]}
           links={[
             {
