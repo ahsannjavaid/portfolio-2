@@ -47,7 +47,7 @@ function Projects() {
   return (
     <section
       id="portfolio"
-      className="flex flex-col items-center justify-start min-h-max w-screen z-40 bg-primary"
+      className="flex flex-col items-center justify-start min-h-max w-screen bg-primary"
     >
       <div className="w-[70%] h-[20vh] flex justify-center items-center">
         <h1 className="text-4xl font-bold after:content-[''] after:block after:pt-2 after:border-b-[#3BB5DB] after:border-b-4">
