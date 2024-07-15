@@ -153,7 +153,7 @@ function Projects() {
           links={mernStackIconsArray}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative sm:my-16">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:my-16">
         <ProjectShowcase
           color="#D6D9DF"
           side="right"
@@ -188,7 +188,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative sm:mb-24 sm:mt-28">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mb-24 md:mt-28">
         <ProjectShowcase
           color="#153292"
           side="left"
@@ -221,7 +221,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative sm:my-24">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:my-24">
         <ProjectShowcase
           color="#FF70FF"
           side="right"
@@ -251,7 +251,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative sm:mt-16">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mt-16">
         <ProjectShowcase
           color="#020B1C"
           side="left"

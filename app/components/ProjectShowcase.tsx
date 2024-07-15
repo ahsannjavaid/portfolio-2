@@ -43,8 +43,8 @@ const ProjectShowcase = ({
       id='project-showcase-container'
       className={
         side === 'right'
-          ? `relative w-full h-full flex flex-col justify-center items-center md:flex-row-reverse`
-          : `relative w-full h-full flex flex-col justify-center items-center md:flex-row`
+          ? `relative w-full h-full flex flex-col justify-center items-center sm:flex-row-reverse`
+          : `relative w-full h-full flex flex-col justify-center items-center sm:flex-row`
       }
     >
       <div
