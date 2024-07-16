@@ -221,13 +221,13 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:my-24">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mb-24">
         <ProjectShowcase
           color="#FF70FF"
           side="right"
           name="Catch the Jewels"
           slogan="(Game)"
-          paragraph="A console-based game that contains two entities; bucket and a jewels as rewards. The rewards worth 5, 10, and 15 points. The goal is to prevent bomb and collect as many rewards as possible in 2 minutes."
+          paragraph="A console-based game that contains two entities; bucket and jewels as rewards. The rewards worth 5, 10, and 15 points. The goal is to prevent bomb and collect as many rewards as possible in 2 minutes."
           githubLink={"https://github.com/ahsannjavaid/books"}
           demoLink={["https://screenrec.com/share/SP2whsknEF"]}
           demoText={["Gameplay"]}
@@ -251,7 +251,7 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mt-16">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
           color="#020B1C"
           side="left"
