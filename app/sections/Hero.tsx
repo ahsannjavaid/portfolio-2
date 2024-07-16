@@ -28,7 +28,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className='flex justify-center items-center flex-col gap-10 py-10 z-0'>
+    <section className='flex justify-center items-center flex-col gap-10 pb-10 z-0'>
       <ParticleBg />
       <div className='inline-block'>
         <div
