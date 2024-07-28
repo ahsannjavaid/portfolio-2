@@ -281,6 +281,43 @@ function Projects() {
           ]}
         />
       </div>
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mt-20">
+        <ProjectShowcase
+          color="#6c757d"
+          side="right"
+          name="University Management System"
+          slogan="(Web Application)"
+          paragraph="A web-based application similar to my UN Portal project but it has some advanced functionalities i.e., attendances, editing option of marks and attendances for instructors. Also an actor admin has been introduced who can add and remove instructors and courses. Also, students have choice to register themselves to any instructor."
+          githubLink="https://github.com/ahsannjavaid/university-management-system"
+          demoLink={["https://umsbyahsanjaved.netlify.app/#/"]}
+          imagePath="/projects/ums/favicon.ico"
+          images={[
+            "/projects/ums/1.png",
+            "/projects/ums/2.png",
+            "/projects/ums/3.png",
+            "/projects/ums/4.png",
+            "/projects/ums/5.png",
+            "/projects/ums/_6.png",
+            "/projects/ums/6.png",
+            "/projects/ums/7.png",
+            "/projects/ums/8.png",
+            "/projects/ums/9.png",
+            "/projects/ums/10.png",
+            "/projects/ums/11.png",
+            "/projects/ums/12.png",
+            "/projects/ums/13.png",
+            "/projects/ums/14.png",
+            "/projects/ums/15.png",
+            "/projects/ums/16.png",
+            "/projects/ums/17.png",
+            "/projects/ums/18.png",
+            "/projects/ums/19.png",
+            "/projects/ums/20.png",
+            "/projects/ums/21.png",
+          ]}
+          links={mernStackIconsArray}
+        />
+      </div>
     </section>
   );
 }
