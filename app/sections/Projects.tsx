@@ -290,7 +290,7 @@ function Projects() {
           paragraph="A web-based application similar to my UN Portal project but it has some advanced functionalities i.e., attendances, editing option of marks and attendances for instructors. Also an actor admin has been introduced who can add and remove instructors and courses. Also, students have choice to register themselves to any instructor."
           githubLink="https://github.com/ahsannjavaid/university-management-system"
           demoLink={["https://umsbyahsanjaved.netlify.app/#/"]}
-          imagePath="/projects/ums/favicon.ico"
+          imagePath="/projects/ums/logo.png"
           images={[
             "/projects/ums/1.png",
             "/projects/ums/2.png",
