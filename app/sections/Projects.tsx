@@ -54,31 +54,39 @@ function Projects() {
           My Projects
         </h1>
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mt-20">
         <ProjectShowcase
-          color="#4D3189"
+          color="#6c757d"
           side="right"
-          name="UN Portal"
+          name="University Management System"
           slogan="(Web Application)"
-          paragraph="A web-based application to help instructors evaluate the performance of students and help students to track their academic performance."
-          githubLink="https://github.com/ahsannjavaid/un-portal"
-          demoLink={["https://un-portalbyahsanjaved.netlify.app/#/"]}
-          imagePath="/projects/unportal/square_icon_0.0.png"
+          paragraph="A web-based application similar to my UN Portal project but it has some advanced functionalities i.e., attendances, editing option of marks and attendances for instructors. Also an actor admin has been introduced who can add and remove instructors and courses. Also, students have choice to register themselves to any instructor."
+          githubLink="https://github.com/ahsannjavaid/university-management-system"
+          demoLink={["https://umsbyahsanjaved.netlify.app/#/"]}
+          imagePath="/projects/ums/logo.png"
           images={[
-            "/projects/unportal/un-1.png",
-            "/projects/unportal/un-2.png",
-            "/projects/unportal/un-3.png",
-            "/projects/unportal/un-4.png",
-            "/projects/unportal/un-5.png",
-            "/projects/unportal/un-6.png",
-            "/projects/unportal/un-7.png",
-            "/projects/unportal/un-8.png",
-            "/projects/unportal/un-9.png",
-            "/projects/unportal/un-10.png",
-            "/projects/unportal/un-11.png",
-            "/projects/unportal/un-12.png",
-            "/projects/unportal/un-13.png",
-            "/projects/unportal/un-14.png",
+            "/projects/ums/1.png",
+            "/projects/ums/2.png",
+            "/projects/ums/3.png",
+            "/projects/ums/4.png",
+            "/projects/ums/5.png",
+            "/projects/ums/_6.png",
+            "/projects/ums/6.png",
+            "/projects/ums/7.png",
+            "/projects/ums/8.png",
+            "/projects/ums/9.png",
+            "/projects/ums/10.png",
+            "/projects/ums/11.png",
+            "/projects/ums/12.png",
+            "/projects/ums/13.png",
+            "/projects/ums/14.png",
+            "/projects/ums/15.png",
+            "/projects/ums/16.png",
+            "/projects/ums/17.png",
+            "/projects/ums/18.png",
+            "/projects/ums/19.png",
+            "/projects/ums/20.png",
+            "/projects/ums/21.png",
           ]}
           links={mernStackIconsArray}
         />
@@ -281,39 +289,31 @@ function Projects() {
           ]}
         />
       </div>
-      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative md:mt-20">
+      <div className="mb-[10vh] max-w-[1400px] md:mb-0 w-[90%] xl:w-[80%] h-[80vh] flex justify-center items-center relative">
         <ProjectShowcase
-          color="#6c757d"
+          color="#4D3189"
           side="right"
-          name="University Management System"
+          name="UN Portal"
           slogan="(Web Application)"
-          paragraph="A web-based application similar to my UN Portal project but it has some advanced functionalities i.e., attendances, editing option of marks and attendances for instructors. Also an actor admin has been introduced who can add and remove instructors and courses. Also, students have choice to register themselves to any instructor."
-          githubLink="https://github.com/ahsannjavaid/university-management-system"
-          demoLink={["https://umsbyahsanjaved.netlify.app/#/"]}
-          imagePath="/projects/ums/logo.png"
+          paragraph="A web-based application to help instructors evaluate the performance of students and help students to track their academic performance."
+          githubLink="https://github.com/ahsannjavaid/un-portal"
+          demoLink={["https://un-portalbyahsanjaved.netlify.app/#/"]}
+          imagePath="/projects/unportal/square_icon_0.0.png"
           images={[
-            "/projects/ums/1.png",
-            "/projects/ums/2.png",
-            "/projects/ums/3.png",
-            "/projects/ums/4.png",
-            "/projects/ums/5.png",
-            "/projects/ums/_6.png",
-            "/projects/ums/6.png",
-            "/projects/ums/7.png",
-            "/projects/ums/8.png",
-            "/projects/ums/9.png",
-            "/projects/ums/10.png",
-            "/projects/ums/11.png",
-            "/projects/ums/12.png",
-            "/projects/ums/13.png",
-            "/projects/ums/14.png",
-            "/projects/ums/15.png",
-            "/projects/ums/16.png",
-            "/projects/ums/17.png",
-            "/projects/ums/18.png",
-            "/projects/ums/19.png",
-            "/projects/ums/20.png",
-            "/projects/ums/21.png",
+            "/projects/unportal/un-1.png",
+            "/projects/unportal/un-2.png",
+            "/projects/unportal/un-3.png",
+            "/projects/unportal/un-4.png",
+            "/projects/unportal/un-5.png",
+            "/projects/unportal/un-6.png",
+            "/projects/unportal/un-7.png",
+            "/projects/unportal/un-8.png",
+            "/projects/unportal/un-9.png",
+            "/projects/unportal/un-10.png",
+            "/projects/unportal/un-11.png",
+            "/projects/unportal/un-12.png",
+            "/projects/unportal/un-13.png",
+            "/projects/unportal/un-14.png",
           ]}
           links={mernStackIconsArray}
         />
