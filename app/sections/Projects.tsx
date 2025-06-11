@@ -60,7 +60,7 @@ function Projects() {
           side="right"
           name="University Management System"
           slogan="(Web Application)"
-          paragraph="A web-based application similar to my UN Portal project but it has some advanced functionalities i.e., attendances, editing option of marks and attendances for instructors. Also an actor admin has been introduced who can add and remove instructors and courses. Also, students have choice to register themselves to any instructor."
+          paragraph="A web-based application where a hidden Admin registers instructors and courses. Instructors offer courses, mark attendance, and upload student performance. Students register, log in using ID or email, and track their academic progress, ensuring efficient performance evaluation and academic monitoring."
           githubLink="https://github.com/ahsannjavaid/university-management-system"
           demoLink={["https://umsbyahsanjaved.netlify.app/#/"]}
           imagePath="/projects/ums/logo.png"
