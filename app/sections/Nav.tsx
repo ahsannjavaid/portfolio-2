@@ -37,7 +37,12 @@ const Nav = () => {
           }
           id="example-navbar-danger"
         >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto gap-5">
+            <li className="nav-item">
+              <Link href="/experience" className="py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
+                Experience
+              </Link>
+            </li>
             <li className="nav-item">
               <Link href="/files/Ahsan Javed Resume V0.1.pdf" target="_blank" rel="noopener noreferrer" className="py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
                 My Resume
