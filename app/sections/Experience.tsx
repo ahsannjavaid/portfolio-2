@@ -27,7 +27,7 @@ function Experience() {
           icon={<MdWork />}
           onTimelineElementClick={() => window.open("https://www.thedevsaar.com/", '_blank', 'noopener,noreferrer')}
         >
-          <h3 className="vertical-timeline-element-title">Junior MERN Stack Trainer</h3>
+          <h3 className="vertical-timeline-element-title">Junior MERN Stack Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">
             Hybrid - Gulberg II, Lahore
           </h4>
