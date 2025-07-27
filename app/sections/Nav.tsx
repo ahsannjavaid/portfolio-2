@@ -44,7 +44,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/files/Ahsan Javed Resume V0.1.pdf" target="_blank" rel="noopener noreferrer" className="py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
+              <Link href="/files/Ahsan_Javed_Resume.pdf" target="_blank" rel="noopener noreferrer" className="py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
                 My Resume
               </Link>
             </li>
