@@ -45,9 +45,9 @@ function Hero() {
         <div className='scale-[0.8] lg:scale-100 relative border-[#526fa9] border-[0.7rem] h-56 w-56 shadow-lg shadow-[#333333]'>
           <div className='absolute h-56 w-56 border-[#526fa9] border-b-[0.7rem] top-[-0.7rem] left-[-0.7rem] z-20'></div>
           <div className='bg-gradient-radial from-[#8a8a8a] to-[#bcbcbc] w-60 h-60 rounded-full absolute top-[-1.7rem] left-[-1.2rem]'></div>
-          <div id='Image Container' className='absolute'>
+          <div id='Image Container' className='absolute -top-8'>
             <img
-              className='object-cover'
+              className='object-cover h-60 w-60'
               src='images/My_Profile_Picture-removebg-preview.png'
               alt="Ahsan's avatar"
             />
