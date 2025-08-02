@@ -48,7 +48,7 @@ function Hero() {
           <div id='Image Container' className='absolute'>
             <img
               className='object-cover'
-              src='images/MyProfilePicture-removebg-preview.png'
+              src='images/My_Profile_Picture-removebg-preview.png'
               alt="Ahsan's avatar"
             />
           </div>
